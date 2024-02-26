@@ -1,0 +1,12 @@
+version: "3.9"  # Specify the Docker Compose version
+
+services:
+  # Replace with the actual name of your service
+  flaskapp:
+    build: .  # Build the image from the current directory
+    image: flask-compose
+    ports:
+      - "80:3000"  # Map container port 5000 to host port 5000
+    restart: always
+
+# Add additional services and configurations as needed
